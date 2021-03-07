@@ -35,7 +35,13 @@ function likePost(){
     var likeCpt = document.getElementById("likeCpt");
     likeBtn.innerHTML = "<i class='fa fa-thumbs-up' aria-hidden='true'> Liked!";
     likes++;
-    likeCpt.innerText = likes+" person likes this!";
+    if(likes>1)
+    {
+        likeCpt.innerText = likes+" people like this!";
+    }
+    else{
+        likeCpt.innerText = likes+" person likes this!";
+    }    
 }
 
 function commentAction() {
