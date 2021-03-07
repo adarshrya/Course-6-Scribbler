@@ -17,6 +17,6 @@
 #### Part A: Creating Home Page [Home](index.html)
   - [Requirement Details](https://github.com/adarshrya/Course-6-Scribbler/issues/1)
 #### Part B: Creating PostsList Page [PostsList](html/postslist.html)
-  - [Requirement Details](https://github.com/adarshrya/Course-6-Scribbler/issues/2)
+  - [Requirement Details](https://github.com/adarshrya/Course-6-Scribbler/issues/3)
 #### Part C: Creating Post Page [Post](html/post.html)
   - [Requirement Details](https://github.com/adarshrya/Course-6-Scribbler/issues/4)
