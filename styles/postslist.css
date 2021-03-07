@@ -1,0 +1,96 @@
+body {
+  background-color: #ffeedd;
+}
+
+.postContainer {
+  height: 100%;
+  width: 95%;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.postContainer .post {
+  order: 2;
+  align-self: flex-start;
+  position: relative;
+  width: 40%;
+  height: 20%;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgb(17 4 63 / 20%), 0 4px 20px 0 rgb(79 19 97 / 19%);
+  margin: 10px 10px 10px 20px;
+  float: left;
+  margin-left: 40px;
+  border-radius: 15px;
+  color: #707070;
+}
+
+.post .postLeft {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 15%;
+  max-width: 15%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+.post:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.post .postContent {
+  width: 85%;
+  display: table-cell;
+  text-align: left;
+  background-color: #e8e8e8;
+  border-radius: 0 15px 15px 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.postContent .postTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.postContent .lbltitle {
+  color: #707070;
+}
+
+.postContent .postDesc {
+  color: black;
+  font-size: large;
+}
+
+.postContent .postDelete {
+  padding-top: 15px;
+  height: 16px; 
+  cursor: pointer;
+}
+
+.postContent .postEllipsis {
+  float: right;
+  padding-bottom: 15px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+#deleteModal form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#deleteModal button{
+    width: 20%;
+}
+
+#deleteModal #btnNo{
+    background-color: red;
+}
