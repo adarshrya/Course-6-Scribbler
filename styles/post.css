@@ -1,0 +1,66 @@
+#btnSave {
+  display: none;
+}
+
+.EditContainer button {
+  background-color: #ed2553;
+  color: white;
+}
+
+.blogBody {
+  text-align: justify;
+}
+
+.commentbox {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e4e6;
+}
+
+.commentbox div {
+  background-color: white;
+  width: 90%;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 25px;
+  padding: 10px 10px;
+}
+
+.EditContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.EditContainer #blogTitle {
+  text-align: center;
+}
+
+.blogAction {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btnLike {
+  margin-top: 15px;
+}
+.EditContainer .customBtn {
+  margin-left: 0px;
+}
+
+.blogAction p {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#commentHolder{
+
+    width: 80%;
+}
+
+#commentHolder textarea{
+    width: 100%;
+}
