@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post Page</title>
+    <!-- TODO: Include Font Awesome file here -->
+    <link href='../font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- TODO: Include Google Fonts file here -->
+    <link href='../styles/fonts.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>    
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+    <div id="header"></div>
+
+    <div class="EditContainer">
+        <div class="blogTitle">
+            <h1 id="blogTitle">Everything you should know about 'module' & 'require' in Node.js</h1>
+        </div>
+        <div class="blogAction">
+            <p>Sristi Gupta</p>
+            <button class="customBtn" id="btnEdit" onclick="enableEdit()">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button class="customBtn" id="btnSave" onclick="saveData()">Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+        </div>
+        <div class="blogBody" id="blogBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis
+            blandit lacus eu cursus. Fusce tincidunt varius tellus, quis suscipit turpis maximus porttitor. Duis quis
+            maximus orci, vel dictum lectus. Cras in risus posuere, tincidunt ligula id, cursus sapien. Donec molestie
+            sodales massa et gravida. Suspendisse ac congue orci. Nunc suscipit justo ac maximus mattis. Pellentesque id
+            erat ut quam mollis sagittis. Fusce molestie varius lobortis. Phasellus laoreet commodo est.
+            Curabitur laoreet in mauris sed gravida. Quisque diam mi, auctor sed faucibus mattis, pulvinar ut ante.
+            Integer imperdiet malesuada ex a dapibus. Ut at maximus ipsum, sit amet molestie lectus. Curabitur vel
+            tortor nec neque sodales sagittis. Pellentesque euismod nibh vel lacinia consectetur. Quisque id varius
+            elit. In at facilisis arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam convallis
+            porttitor dignissim. Donec sed blandit tellus, nec varius sapien. Maecenas vulputate nunc id porta
+            scelerisque. Quisque tincidunt velit sed leo condimentum faucibus. Quisque vel venenatis urna.
+            Morbi nec mi fermentum, hendrerit elit et, tempus odio. Vestibulum non porta est, non blandit elit. In quis
+            finibus tortor. Ut eget nisl interdum, tincidunt lorem hendrerit, facilisis nibh. Morbi ut enim libero. In
+            ut aliquam sapien. Donec vestibulum posuere augue, vel semper lectus elementum id. Phasellus quis
+            sollicitudin arcu. Donec egestas nulla in odio viverra, sed pulvinar tellus semper. Curabitur iaculis nisi
+            eu diam posuere, sit amet congue tellus ultrices.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis blandit lacus eu cursus. Fusce
+            tincidunt varius tellus, quis suscipit turpis maximus porttitor. Duis quis maximus orci, vel dictum lectus.
+            Cras in risus posuere, tincidunt ligula id, cursus sapien. Donec molestie sodales massa et gravida.
+            Suspendisse ac congue orci. Nunc suscipit justo ac maximus mattis. Pellentesque id erat ut quam mollis
+            sagittis. Fusce molestie varius lobortis. Phasellus laoreet commodo est.
+            Curabitur laoreet in mauris sed gravida. Quisque diam mi, auctor sed faucibus mattis, pulvinar ut ante.
+            Integer imperdiet malesuada ex a dapibus. Ut at maximus ipsum, sit amet molestie lectus. Curabitur vel
+            tortor nec neque sodales sagittis. Pellentesque euismod nibh vel lacinia consectetur. Quisque id varius
+            elit. In at facilisis arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam convallis
+            porttitor dignissim. Donec sed blandit tellus, nec varius sapien. Maecenas vulputate nunc id porta
+            scelerisque. Quisque tincidunt velit sed leo condimentum faucibus. Quisque vel venenatis urna.
+            Morbi nec mi fermentum, hendrerit elit et, tempus odio. Vestibulum non porta est, non blandit elit. In quis
+            finibus tortor. Ut eget nisl interdum, tincidunt lorem hendrerit, facilisis nibh. Morbi ut enim libero. In
+            ut aliquam sapien. Donec vestibulum posuere augue, vel semper lectus elementum id. Phasellus quis
+            sollicitudin arcu. Donec egestas nulla in odio viverra, sed pulvinar tellus semper. Curabitur iaculis nisi
+            eu diam posuere, sit amet congue tellus ultrices.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis blandit lacus eu cursus. Fusce
+            tincidunt varius tellus, quis suscipit turpis maximus porttitor. Duis quis maximus orci, vel dictum lectus.
+            Cras in risus posuere, tincidunt ligula id, cursus sapien. Donec molestie sodales massa et gravida.
+            Suspendisse ac congue orci. Nunc suscipit justo ac maximus mattis. Pellentesque id erat ut quam mollis
+            sagittis. Fusce molestie varius lobortis. Phasellus laoreet commodo est.
+            Curabitur laoreet in mauris sed gravida. Quisque diam mi, auctor sed faucibus mattis, pulvinar ut ante.
+            Integer imperdiet malesuada ex a dapibus. Ut at maximus ipsum, sit amet molestie lectus. Curabitur vel
+            tortor nec neque sodales sagittis. Pellentesque euismod nibh vel lacinia consectetur. Quisque id varius
+            elit. In at facilisis arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam convallis
+            porttitor dignissim. Donec sed blandit tellus, nec varius sapien. Maecenas vulputate nunc id porta
+            scelerisque. Quisque tincidunt velit sed leo condimentum faucibus. Quisque vel venenatis urna.
+            Morbi nec mi fermentum, hendrerit elit et, tempus odio. Vestibulum non porta est, non blandit elit. In quis
+            finibus tortor. Ut eget nisl interdum, tincidunt lorem hendrerit, facilisis nibh. Morbi ut enim libero. In
+            ut aliquam sapien. Donec vestibulum posuere augue, vel semper lectus elementum id. Phasellus quis
+            sollicitudin arcu. Donec egestas nulla in odio viverra, sed pulvinar tellus semper. Curabitur iaculis nisi
+            eu diam posuere, sit amet congue tellus ultrices.
+        </div>
+        <button class="customBtn" id="btnLike" onclick="likePost()"><i class="fa fa-thumbs-up" aria-hidden="true">Like</i></button>
+        <p id="likeCpt">Be the first one to like this!</p>
+        <div id="commentHolder">
+            <textarea rows="5" id="commenttext" name="comment" placeholder="Leave a comment..."></textarea>
+            <button class="customBtn" id="comment" name="comment" onclick="commentAction()">Comment</button>
+            <h3>All Comments</h3>
+            <div id="commentbox" class="commentbox"></div>
+        </div>
+    </div>
+
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>
